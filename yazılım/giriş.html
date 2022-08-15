@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="icon/logo.ico">
+
+    <title>Aydın Devlet hastanesi Giriş yap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+  
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+    <link href="signin.css" rel="stylesheet">
+    <link href="index.html">
+
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin">
+      <img class="mb-4" src="logo/logo.png" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Lütfen Giriş Yap</h1>
+      <input type="email" id="email" class="form-control" placeholder="Email adresi" required autofocus>
+      <div class="email-error-message"></div>
+
+      <input type="password" id="password" class="form-control" placeholder="Şifre" required>
+      <div class="password-error-message"></div>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Beni hatırla
+        </label>
+      </div>
+      <a onclick="checkLogin()" type="button" id="btn" class="btn btn-lg btn-primary btn-block"
+       runat="server" id="btn_deneme">Giriş yap</a>
+
+    </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p><img src="https://www.sonsuzteknoloji.com/wp-content/uploads/2021/06/tik-isareti.png" alt="GİRİŞ BAŞARILI">
+          <center></br>GİRİŞ BAŞARILI</center></p>
+        </div>
+      </div>
+
+      <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
+    </form>  
+
+  <script>
+document.getElementById("btn").onclick = function(event)
+{
+    //get set stored data
+    var emailStored = localStorage.getItem('email')
+    var passwordStored = localStorage.getItem('password')
+
+    var email = document.getElementById("email").value
+    var password = document.getElementById("password").value
+
+
+    if(localStorage.getItem("password") == password & localStorage.getItem("email") == email ) {
+      alert("şifre doğru");
+      location.href = "https://www.google.com.tr/?hl=tr"
+    }
+    else
+    {
+      alert("Şifre veya Email yanlış");
+     
+    }
+}
+
+
+
+  </script>
+
+  </body>
+</html>

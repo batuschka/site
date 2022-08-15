@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="id"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="phone"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Popup (arka plan) */
+.modal {
+  display: none; /* Varsayılan olarak gizlidir */
+  position: fixed; /* Yerinde kal */
+  z-index: 1; /* Üstte */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ful Genişlik */
+  height: 100%; /* Ful Yükseklik */
+  overflow: auto; /* Gerekirse kaydırmayı etkinleştir */
+  background-color: rgb(0,0,0); /* Yedek renk */
+  background-color: rgba(0,0,0,0.4); /* Siyah w / opaklık */
+}
+
+/* İçerik / Kutu */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* % 15 üstten ve ortalanmış */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ekran boyutuna bağlı olarak daha fazla veya daha az olabilir */
+}
+
+/* Kapat Düğmesi */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

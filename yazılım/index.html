@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="C:\Users\BATUHAN SAVAR\OneDrive\Masaüstü\yazılım\icon\logo.ico">
+
+    <title>Aydın devlet hastanesi Kayıt ol</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="signin.css" rel="stylesheet">
+    <link href="giriş.html">
+
+  </head>
+
+  <body class="text-center">
+
+
+
+    <form class="form-signin">
+
+    <div id="welcomeTheUsar">
+      <!--This is the welcome div for the user, code also borrowed and moddified from UNKNOWN's lessons-->
+      <img class="mb-4" src="C:\Users\BATUHAN SAVAR\OneDrive\Masaüstü\yazılım\logo\logo.png" alt="" width="75" height="75">
+      <h1 class="h3 mb-3 font-weight-normal">Lütfen Kayıt Ol</h1>
+
+      <input type="id" id="inputİd" class="form-control" placeholder="Tc Kimlik No" required autofocus>
+
+      <input type="name"  class="form-control" id="inputName" placeholder="Adınız" required>
+
+      <input type="surname" id="inputSurname" class="form-control" placeholder="Soyadınız" required>
+
+      <input type="kan"  class="form-control" id="inputName" placeholder="Kan Grubunuz" required>
+
+      <input type="hobi"  class="form-control" id="inputName" placeholder=" Hobileriniz" required>
+
+      <input type="phone" id="inputPhone" class="form-control" placeholder="Telefon Numarası" required>
+
+      <input type="email" id="email" class="form-control" placeholder="Email adresi" required>
+      <div class="email-error-message"></div>
+      <input type="password" id="password" class="form-control" placeholder="Şifre" required>
+      <div class="password-error-message"></div>
+
+      </div>
+      
+      <a id="btn" class="btn btn-lg btn-primary btn-block" href="C:\Users\BATUHAN SAVAR\OneDrive\Masaüstü\yazılım\giriş.html">Kayıt ol</a>
+      
+
+      <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
+    </form>
+
+    <script>
+     
+     document.getElementById("btn").onclick = function(event) {
+
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+
+
+localStorage.setItem("email",email);
+localStorage.setItem("password",password);
+
+localStorage.setItem();
+
+
+}
+
+
+
+  
+
+      
+    </script>
+ 
+
+  </body>
+</html>
